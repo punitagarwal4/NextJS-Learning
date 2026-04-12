@@ -2,17 +2,15 @@ import Link from "next/link";
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }: { children: React.ReactNode }) => {
     return (
-        <html lang="en" className="h-full antialiased">
-            <body className="min-h-full flex flex-col">
-                <div className="bg-gray-800 text-white p-4">
-                    <div className="flex justify-between items-center">
-                        <h1 className="text-2xl font-bold"><Link href="/dashboard">Dashboard</Link></h1>
-                        <Link href="/" className="text-white-500">Back to Home</Link>
-                    </div>
+        <body className="min-h-full flex flex-col">
+            <div className="bg-gray-800 text-white p-4">
+                <div className="flex justify-between items-center">
+                    <h1 className="text-2xl font-bold"><Link href="/dashboard">Dashboard</Link></h1>
+                    <Link href="/" className="text-white-500">Back to Home</Link>
                 </div>
-                {children}
-            </body>
-        </html>
+            </div>
+            {children}
+        </body>
     );
 }
 

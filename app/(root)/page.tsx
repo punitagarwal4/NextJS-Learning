@@ -13,6 +13,9 @@ const Home: React.FC = () => {
         <Link href="/about" className="mt-4 text-blue-500 hover:underline">
           Learn more about us
         </Link>
+        <Link href="/books" className="mt-4 text-purple-500 hover:underline">
+          View our books
+        </Link>
         <Link href="/dashboard" className="mt-4 text-green-500 hover:underline">
           Go to Dashboard
         </Link>
@@ -22,12 +25,17 @@ const Home: React.FC = () => {
         <Link href="/forbidden" className="mt-4 text-yellow-500 hover:underline">
           View forbidden page
         </Link>
-        <link href="/unauthorized" className="mt-4 text-orange-500 hover:underline">
+        <Link href="/unauthorized" className="mt-4 text-orange-500 hover:underline">
           View unauthorized page
-        </link>
+        </Link>
       </div>
     </main>
   );
 }
+
+export const metadata = {
+  title: "Home Page",
+  description: "Welcome to the home page of our Next.js app.",
+};
 
 export default Home;
