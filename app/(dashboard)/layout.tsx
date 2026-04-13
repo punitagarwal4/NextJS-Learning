@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }: { children: React.ReactNode }) => {
     return (
-        <body className="min-h-full flex flex-col">
+        <>
             <div className="bg-gray-800 text-white p-4">
                 <div className="flex justify-between items-center">
                     <h1 className="text-2xl font-bold"><Link href="/dashboard">Dashboard</Link></h1>
@@ -10,7 +10,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }: { chi
                 </div>
             </div>
             {children}
-        </body>
+        </>
     );
 }
 
