@@ -1,4 +1,4 @@
-const UserDetails: React.FC<{params: Promise<{id: string}>}> = async ({params}:{params: Promise<{id: string}>}) => {
+const UserDetails = async ({params}:{params: Promise<{id: string}>}) => {
     const { id } = await params;
     return (
         <main>
